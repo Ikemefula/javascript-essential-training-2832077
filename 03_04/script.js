@@ -1,6 +1,10 @@
 /**
  * Create a Backpack object.
+ * TAKEAWAY NOTES:
+ * 1. use camel ase lettering to name the object
  */
+
+
 
 const backpack = {
   name: "Everyday Backpack",
