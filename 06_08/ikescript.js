@@ -11,15 +11,20 @@ console.log('let a: ${c} (${typeof c})');
 let result = a ** b;
 
 
+// Pre increment
 // console.log("Your Result Are: ", ++a);
 // console.log(a);
 
+// Post increment
+// using this will first output the original value of 15, then outputs the new value of 16 for it to be used later in my code.
 // console.log("Your Result Are: ", a++);
 // console.log(a);
 
+// Pre increment
 // console.log("Your Result Are: ", --a);
 // console.log(a);
 
+// Post increment
 // console.log("Your Result Are: ", a--);
 // console.log(a);
 

@@ -1,0 +1,43 @@
+
+
+
+
+
+What happens if you use a named variable without first declaring it using the var, let, or const keywords?
+A global var is created with the name and value assignment.
+
+
+What is the value of defaultColor when it is logged in the console?
+var defaultColor = "purple";
+
+function setColor() {
+    if ( defaultColor === "purple" ) {
+        let defaultColor = "orange";
+    }
+}
+
+setColor();
+console.log(defaultColor);
+
+You are correct!
+"purple"
+Feedback
+
+The console.log statement happens in the global scope while the color is changed in a local scope where a separate let with the same name is created. let defaultColor only exists inside the function scope of setColor().
+
+
+
+
+
+
+
+
+How do you capture the result of a math equation like 42 * 38 in JavaScript?
+Create a variable and set it equal to the math equation.
+
+
+
+
+In what scenario should you use var instead of let to define a variable?
+
+When you need a variable to be available in other modules than the one it is defined (thus a "global" variable).
