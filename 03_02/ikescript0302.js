@@ -1,6 +1,6 @@
 /**
  * TAKEAWAY NOTES: 
- * 1. Methods - Property-changing features inside of my objects. They act on the current object ONLY. 
+ * 1. Methods - props containing functions. Property-changing functions inside of my objects. They act on the current object ONLY. 
  * 2. A good way to answer questions during an interview. Javascript is an object-oriented programming language. The objects are based on prototypes.
  * 3. Object - have properties that define its capabilities
  * 4. Properties - examples include colors, straps, and
@@ -10,6 +10,7 @@
  * 8. objects have features that allow us to change their prop values called methods 
  * 9. objects can contain other nested objects
  * 10. Curly brackets define data as an object 
+ * 11. This keyword - refers to the current object. "this object right here"
  
 
 
@@ -33,7 +34,15 @@ const backpack = {
         right: 26,
     },
     lidOpen: false,
+    toggleLid: function (lidStatus) {
+        this.lidOpen = lidStatus;
+    },
+    newStrapLength: function (lengthLeft, lengthRight) {
+        this.strapLength.left = leftLength;
+        this.strapLength.right = lengthRight;
+    },
 };
+// this is a method or value pairs. the value in a method is a function or a call to a function. Calling the method from outside the object will trigger the function contained within that method
 
 
 
