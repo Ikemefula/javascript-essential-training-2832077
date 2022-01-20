@@ -24,17 +24,8 @@
  */
 
 
-const backpack = {
+const ikesObject = {
     name: "Ikemefula's Backpack",
-    volume: 1000,
-    color: 'purple',
-    pocketNum: 15, 
-    strapLength
-
-}
-
-const backpack = {
-    name: 'Everyday Backpack',
     volume: 30,
     color: 'grey',
     pocketNum: 15,
