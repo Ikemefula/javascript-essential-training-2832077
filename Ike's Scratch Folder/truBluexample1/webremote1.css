@@ -1,0 +1,960 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:600|Montserrat:600");
+@font-face {
+  font-family: "VisbyCF-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/VisbyCF-Bold") format("opentype");
+}
+@font-face {
+  font-family: "VisbyCF-Heavy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.animaapp.com/VisbyCF-Heavy") format("opentype");
+}
+@font-face {
+  font-family: "VisbyCF-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/VisbyCF-ExtraBold") format("opentype");
+}
+@font-face {
+  font-family: "VisbyCF-DemiBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.animaapp.com/VisbyCF-DemiBold") format("truetype");
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --charade: #292e32;
+  --ffffff: #ffffff;
+  --wci-international-orange-aerospace-ff4f00: #ff4f00;
+  --wci-light-blue-5389c1: #5389c1;
+  --wci-xiketic-022140: #022140;
+
+  --font-size-l: 20px;
+  --font-size-l2: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 24px;
+  --font-size-xs: 13px;
+
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-visbycf-bold: "VisbyCF-Bold", Helvetica;
+  --font-family-visbycf-demibold: "VisbyCF-DemiBold", Helvetica;
+  --font-family-visbycf-extrabold: "VisbyCF-ExtraBold", Helvetica;
+  --font-family-visbycf-heavy: "VisbyCF-Heavy", Helvetica;
+}
+.visbycf-bold-charade-16px {
+  color: var(--charade);
+  font-family: var(--font-family-visbycf-bold);
+  font-size: var(--font-size-l2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.visbycf-bold-international-orange-14px {
+  color: var(--wci-international-orange-aerospace-ff4f00);
+  font-family: var(--font-family-visbycf-bold);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.x6-home-ui-2 {
+  background-color: var(--ffffff);
+  height: 896px;
+  opacity: 0;
+  overflow: hidden;
+  transform: translate(0, 25px);
+  width: 414px;
+}
+
+.x6-home-ui-2.animate-enter {
+  animation: animate-enter-frames 0.4s ease-in-out 0s 1 normal forwards;
+  opacity: 0;
+  transform: translate(0, 25px);
+}
+
+@keyframes animate-enter-frames {
+  from {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.x6-home-ui-2 .overlap-group4 {
+  height: 1087px;
+  left: -295px;
+  position: relative;
+  width: 709px;
+}
+
+.x6-home-ui-2 .background {
+  background: linear-gradient(184.19deg, #093a74 54.71%, #00071f 98.2%);
+  border-radius: 11px;
+  height: 896px;
+  left: 295px;
+  position: absolute;
+  top: 0;
+  width: 414px;
+}
+
+.x6-home-ui-2 .ui-body-group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 295px;
+  min-height: 762px;
+  position: absolute;
+  top: 69px;
+  width: 414px;
+}
+
+.x6-home-ui-2 .div-1-group {
+  align-items: flex-end;
+  display: flex;
+  height: 107px;
+  min-width: 414px;
+  padding: 0.4px 91px;
+}
+
+.x6-home-ui-2 .logo-select-device {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 106px;
+  width: 232px;
+}
+
+.x6-home-ui-2 .logo-group {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/worldvue-logo-light-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0;
+  min-width: 172px;
+}
+
+.x6-home-ui-2 .world-vue-logo-dark {
+  height: 52px;
+  margin-bottom: 0;
+  object-fit: cover;
+  width: 172px;
+}
+
+.x6-home-ui-2 .wci-remote-dropdown-menu {
+  background: linear-gradient(259.33deg, #00369b 0.83%, #0a3e90 99.93%);
+  border: 1px solid #cecece96;
+  border-radius: 4px;
+  display: flex;
+  height: 46px;
+  margin-top: 8px;
+  width: 232px;
+}
+
+.x6-home-ui-2 .select-device-group {
+  display: flex;
+  flex: 1;
+  margin-bottom: 15px;
+  margin-left: 46px;
+  margin-right: 36px;
+  margin-top: 15px;
+  width: 150px;
+}
+
+.x6-home-ui-2 .select-a-device {
+  color: var(--ffffff);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  height: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -6px;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.x6-home-ui-2 .icon-awesome-caret-down {
+  align-self: flex-end;
+  height: 6.29px;
+  margin-bottom: -3.1px;
+  margin-left: 18px;
+  object-fit: cover;
+  width: 12px;
+}
+
+.x6-home-ui-2 .div-2-group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1px;
+  margin-top: 24px;
+  min-height: 602px;
+  width: 337px;
+}
+
+.x6-home-ui-2 .top-icon-group {
+  align-items: center;
+  display: flex;
+  margin-left: 0.85px;
+  min-width: 286px;
+}
+
+.x6-home-ui-2 .app-icon-24pt-x-24pt-48px-by-48px {
+  align-items: flex-start;
+  display: flex;
+  min-width: 24px;
+}
+
+.x6-home-ui-2 .overlap-group2 {
+  height: 27px;
+  position: relative;
+  width: 24px;
+}
+
+.x6-home-ui-2 .guide {
+  height: 24px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 24px;
+}
+
+.x6-home-ui-2 .guide-1 {
+  height: 12px;
+  left: 6px;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 12px;
+}
+
+.x6-home-ui-2 .icon-material-keyboard-arrow-left {
+  height: 27px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.x6-home-ui-2 .app-icon-24pt-x-24pt-48px-by-48px-1 {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/guide-10@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 24px;
+  margin-left: 106px;
+  margin-top: 0.32px;
+  min-width: 24px;
+  padding: 3.5px 0;
+}
+
+.x6-home-ui-2 .overlap-group1 {
+  height: 16px;
+  position: relative;
+  width: 24px;
+}
+
+.x6-home-ui-2 .guide-2 {
+  height: 12px;
+  left: 7px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 12px;
+}
+
+.x6-home-ui-2 .path-menu {
+  height: 16px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.x6-home-ui-2 .app-icon-24pt-x-24pt-48px-by-48px-2 {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 106px;
+  margin-top: 0.12px;
+  min-width: 25px;
+}
+
+.x6-home-ui-2 .overlap-group-1 {
+  height: 25px;
+  margin-top: 0;
+  position: relative;
+  width: 25px;
+}
+
+.x6-home-ui-2 .guide-3 {
+  height: 12px;
+  left: 7px;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 12px;
+}
+
+.x6-home-ui-2 .icon-awesome-power-off {
+  height: 24px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.x6-home-ui-2 .navigational-pad {
+  align-items: flex-end;
+  background-color: var(--wci-xiketic-022140);
+  border-radius: 40px;
+  display: flex;
+  height: 413px;
+  justify-content: flex-end;
+  margin-top: 10px;
+  min-width: 337px;
+  padding: 48.4px 10.3px;
+}
+
+.x6-home-ui-2 .middle-nav-section {
+  align-items: flex-start;
+  display: flex;
+  min-width: 316px;
+}
+
+.x6-home-ui-2 .overlap-group-2 {
+  height: 316px;
+  position: relative;
+  width: 316px;
+}
+
+.x6-home-ui-2 .middle-circle {
+  background-color: var(--wci-light-blue-5389c1);
+  border-radius: 12px;
+  height: 24px;
+  left: 146px;
+  position: absolute;
+  top: 146px;
+  width: 24px;
+}
+
+.x6-home-ui-2 .left-right-group {
+  display: flex;
+  height: 10px;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 153px;
+  width: 316px;
+}
+
+.x6-home-ui-2 .left-arrow {
+  height: 28.33px;
+  margin-left: -9px;
+  margin-top: -6px;
+  object-fit: cover;
+  width: 30.86px;
+}
+
+.x6-home-ui-2 .right-arrow {
+  align-self: flex-end;
+  height: 28.33px;
+  margin-bottom: -12px;
+  margin-right: -9px;
+  object-fit: cover;
+  width: 30.86px;
+}
+
+.x6-home-ui-2 .up-down-arrow-group {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 316px;
+  justify-content: space-between;
+  left: 153px;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+
+.x6-home-ui-2 .font-awsome-angle-double-up {
+  height: 30.46px;
+  margin-top: -6px;
+  object-fit: cover;
+  width: 28px;
+}
+
+.x6-home-ui-2 .font-awsome-angle-double-down {
+  height: 31.11px;
+  margin-bottom: -12px;
+  object-fit: cover;
+  width: 28.33px;
+}
+
+.x6-home-ui-2 .control-button-group {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 10px;
+  min-width: 319px;
+}
+
+.x6-home-ui-2 .web_-remote_-button_1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 66px;
+}
+
+.x6-home-ui-2 .overlap-group {
+  height: 142px;
+  position: relative;
+  width: 66px;
+}
+
+.x6-home-ui-2 .down-button-group {
+  align-items: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/down-button-background-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 71px;
+  left: 0;
+  position: absolute;
+  top: 71px;
+  width: 66px;
+}
+
+.x6-home-ui-2 .icon-arrow-down {
+  flex: 1;
+  height: 8.72px;
+  margin-bottom: 29.2px;
+  margin-left: 25px;
+  margin-right: 25.7px;
+  object-fit: cover;
+}
+
+.x6-home-ui-2 .up-button-group {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/up-button-background-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 71px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 66px;
+}
+
+.x6-home-ui-2 .icon-arrow-up {
+  flex: 1;
+  height: 8.72px;
+  margin-left: 25px;
+  margin-right: 25.7px;
+  margin-top: 27px;
+  object-fit: cover;
+}
+
+.x6-home-ui-2 .middle {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 70px;
+  width: 65px;
+}
+
+.x6-home-ui-2 .icon {
+  display: flex;
+  height: 17px;
+  left: 18px;
+  position: absolute;
+  top: 61px;
+  width: 32px;
+}
+
+.x6-home-ui-2 .main-icon {
+  flex: 1;
+  height: 19px;
+  letter-spacing: 0.84px;
+  line-height: 14px;
+  margin-right: -2px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.x6-home-ui-2 .streaming-apps {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 24px;
+  width: 139px;
+}
+
+.x6-home-ui-2 .widget {
+  align-items: flex-end;
+  background-color: var(--wci-xiketic-022140);
+  border-radius: 69.5px;
+  display: flex;
+  height: 139px;
+  justify-content: flex-end;
+  min-width: 139px;
+  padding: 47.8px 53px;
+}
+
+.x6-home-ui-2 .undefined {
+  height: 43px;
+  object-fit: cover;
+  width: 32px;
+}
+
+.x6-home-ui-2 .web_-remote_-button_1-1 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  margin-left: 24px;
+  min-width: 66px;
+}
+
+.x6-home-ui-2 .icon-1 {
+  display: flex;
+  height: 17px;
+  left: 23px;
+  position: absolute;
+  top: 61px;
+  width: 22px;
+}
+
+.x6-home-ui-2 .div-group-3 {
+  background-color: #fffffffe;
+  border-radius: 3px;
+  height: 5px;
+  margin-left: 1px;
+  margin-top: 24px;
+  width: 149px;
+}
+
+.x6-home-ui-2 .wci-menu-close {
+  align-items: flex-start;
+  display: flex;
+  height: 982px;
+  left: 0;
+  min-width: 349px;
+  position: absolute;
+  top: 105px;
+}
+
+.x6-home-ui-2 .overlap-group3 {
+  height: 925px;
+  position: relative;
+  width: 256px;
+}
+
+.x6-home-ui-2 .menu-background {
+  -webkit-backdrop-filter: blur(9.83px) brightness(122.86%);
+  backdrop-filter: blur(9.83px) brightness(122.86%);
+  background: linear-gradient(
+    190.85deg,
+    rgba(227, 227, 227, 0.01) 1.22%,
+    rgba(105, 102, 102, 0) 99.92%
+  );
+  border: 1px solid #efe4e469;
+  border-radius: 4px;
+  box-shadow: 0px 8px 6px #00000029;
+  height: 897px;
+  left: 46px;
+  opacity: 0.05;
+  position: absolute;
+  top: 28px;
+  width: 178px;
+}
+
+.x6-home-ui-2 .profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 451px;
+  justify-content: space-between;
+  left: 0;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  width: 256px;
+}
+
+.x6-home-ui-2 .profile-group {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.x6-home-ui-2 .mdi-account-circle-outline {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/path---account-circle-outline-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.x6-home-ui-2 .profile-info-group {
+  align-items: flex-end;
+  display: flex;
+  height: 79px;
+  margin-top: 10px;
+  min-width: 134px;
+}
+
+.x6-home-ui-2 .overlap-group-3 {
+  height: 80px;
+  margin-bottom: -4px;
+  position: relative;
+  width: 134px;
+}
+
+.x6-home-ui-2 .aman-giri {
+  color: #713f0d;
+  font-family: var(--font-family-visbycf-extrabold);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  left: 2px;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  position: absolute;
+  top: 54px;
+  white-space: nowrap;
+}
+
+.x6-home-ui-2 .valued-guest {
+  color: #e57210;
+  font-family: var(--font-family-visbycf-demibold);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  position: absolute;
+  top: 30px;
+  white-space: nowrap;
+}
+
+.x6-home-ui-2 .place {
+  color: #2a2f33;
+  font-family: var(--font-family-visbycf-heavy);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  left: 5px;
+  letter-spacing: 0.96px;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.x6-home-ui-2 .options-group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  min-height: 203px;
+  width: 194.19px;
+}
+
+.x6-home-ui-2 .closed-captions-group {
+  align-items: center;
+  display: flex;
+  min-width: 194px;
+}
+
+.x6-home-ui-2 .closed-captions {
+  align-self: flex-end;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  margin-bottom: -1.5px;
+  min-height: 21px;
+  min-width: 132px;
+  white-space: nowrap;
+}
+
+.x6-home-ui-2 .mdi-closed-caption {
+  display: flex;
+  height: 24px;
+  margin-left: 6px;
+  width: 24px;
+}
+
+.x6-home-ui-2 .path {
+  flex: 1;
+  margin-bottom: 4px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 4px;
+  object-fit: cover;
+  width: 18px;
+}
+
+.x6-home-ui-2 .material-toggle {
+  align-items: flex-end;
+  display: flex;
+  margin-left: 8px;
+  margin-top: 0.86px;
+  min-width: 24px;
+}
+
+.x6-home-ui-2 .overlap-group-4 {
+  height: 15px;
+  margin-bottom: 0;
+  position: relative;
+  width: 24px;
+}
+
+.x6-home-ui-2 .rectangle-2158 {
+  background-color: #9a9999;
+  border-radius: 14px;
+  height: 9px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 20px;
+}
+
+.x6-home-ui-2 .ellipse-39 {
+  background-color: #fafafa;
+  border-radius: 6.86px;
+  box-shadow: 0px 3px 2px #00000041;
+  height: 14px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  transform: rotate(5deg);
+  width: 14px;
+}
+
+.x6-home-ui-2 .change-input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 141px;
+}
+
+.x6-home-ui-2 .change-input {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  margin-top: -45.5px;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.x6-home-ui-2 .mdi-import {
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.x6-home-ui-2 .change-device-group {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 145px;
+}
+
+.x6-home-ui-2 .change-device {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 123px;
+}
+
+.x6-home-ui-2 .mdi {
+  display: flex;
+  height: 16px;
+  width: 16px;
+}
+
+.x6-home-ui-2 .path-television-guide {
+  flex: 1;
+  margin-bottom: 3px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 3px;
+  object-fit: cover;
+  width: 14px;
+}
+
+.x6-home-ui-2 .end-device-control-group {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 175px;
+}
+
+.x6-home-ui-2 .end-device-control {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 153px;
+}
+
+.x6-home-ui-2 .path-1 {
+  flex: 1;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  object-fit: cover;
+  width: 12px;
+}
+
+.x6-home-ui-2 .show-grid-group {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 107px;
+}
+
+.x6-home-ui-2 .show-grid {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 85px;
+}
+
+.x6-home-ui-2 .mdi-grid {
+  align-self: flex-end;
+  display: flex;
+  height: 16px;
+  margin-bottom: -5.3px;
+  width: 16px;
+}
+
+.x6-home-ui-2 .show-heatmap-group {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 147px;
+}
+
+.x6-home-ui-2 .show-heatmap {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 125px;
+}
+
+.x6-home-ui-2 .path-map {
+  flex: 1;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  object-fit: cover;
+  width: 10px;
+}
+
+.x6-home-ui-2 .help-group {
+  display: flex;
+  height: 19px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 55px;
+}
+
+.x6-home-ui-2 .help {
+  height: 21px;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  white-space: nowrap;
+  width: 38px;
+}
+
+.x6-home-ui-2 .mdi-help-rhombus {
+  align-self: flex-end;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/610c60033089d84d3f8ae293/releases/61e92d3a63429f17d5800303/img/path---help-rhombus-1@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 12px;
+  margin-bottom: -5.1px;
+  width: 12.01px;
+}
+
+.x6-home-ui-2 .line-container {
+  height: 22px;
+  margin-left: 68px;
+  margin-top: 3.5px;
+  position: relative;
+  width: 22px;
+}
+
+.x6-home-ui-2 .line-1 {
+  height: 8px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+
+.x6-home-ui-2 .line-2 {
+  height: 8px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 18px;
+}
+
+.x6-home-ui-2 .line-3 {
+  height: 8px;
+  left: 4px;
+  object-fit: cover;
+  position: absolute;
+  top: 14px;
+  width: 17px;
+}
